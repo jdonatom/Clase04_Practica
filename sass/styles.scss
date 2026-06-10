@@ -106,3 +106,52 @@ a {
     color: $acento;
   }
 }
+
+// Iconos
+
+a[href$=".pdf"] {
+  &::before {
+    content: url("../assets/iconos/pdf.png");
+    vertical-align: middle;
+  }
+}
+
+a[href$=".xlsx"],
+[href$=".xls"] {
+  &::before {
+    content: url("../assets/iconos/excel.png");
+    vertical-align: middle;
+  }
+}
+
+a[href$=".png"],
+a[href$=".jpg"],
+a[href$=".jpeg"] {
+  &::before {
+    content: url("../assets/iconos/imagen.png");
+    vertical-align: middle;
+  }
+}
+
+a[href$=".docx"],
+[href$=".doc"] {
+  &::before {
+    content: url("../assets/iconos/word.png");
+    vertical-align: middle;
+  }
+}
+
+a[href$=".zip"] {
+  &::before {
+    content: url("../assets/iconos/zip.png");
+    vertical-align: middle;
+  }
+}
+
+a[href$=".mp3"],
+[href$=".mp4"] {
+  &::before {
+    content: url("../assets/iconos/audio.png");
+    vertical-align: middle;
+  }
+}
